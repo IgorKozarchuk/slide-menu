@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", sans-serif;
+	background-color: #f4f4f4;
+}
+
+.navbar-nav {
+	background-color: #3b5998;
+	overflow: hidden;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-nav li {
+	list-style-type: none;
+}
+
+.navbar-nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	padding: 16px 14px;
+}
+
+.navbar-nav a:hover {
+	color: #3b5998;
+	background-color: #fff;
+	transition: 0.3s;
+}
+
+.navbar-nav a:hover svg path {
+	stroke: #3b5998;
+}
+
+#btn-open {
+	padding: 12px 14px;
+}
+
+#side-menu {
+	width: 0;
+}
+
+.side-nav {
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow-x: hidden;
+	font-size: 18px;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.side-nav a {
+	display: block;
+	text-decoration: none;
+	color: #bbb;
+	padding: 12px 14px;
+}
+
+.side-nav a:hover {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: 0.3s;
+}
+
+#btn-close {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: right;
+	padding: 10.5px 14px;
+}
+
+#main {
+	padding: 20px;
+	transition: margin-left 0.5s;
+}
+
+#main h1 {
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 599px) {
+	.navbar-nav li:not(:first-child) {
+		display: none;
+	}
+}
+
+/* @media screen and (min-width: 600px) {
+	.navbar-nav li:first-child {
+		display: none;
+	}
+} */
